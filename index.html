@@ -11,7 +11,9 @@
             <section class="principal">
             	
                 <aside>
-                	<img src="johnes.jpeg" alt="ma photo" class="images_petit" />
+                	<!--<img src="johnes.jpeg" alt="ma photo" class="images_petit" /> -->
+
+                    <img src="johnes.jpeg" alt=" " class="images_petit" />
                 	
 
                 	<p>
@@ -167,8 +169,15 @@
                             </div>
 
 
-                            <div class="side3">
-                            	<aside >
+
+                            <aside class="side3">
+                                
+
+                            
+
+
+                            <div >
+                            	<aside class="side_interieur">
 	                                <h3 class=" Langues " > Langues </h3>
 	                                <ul>
 
@@ -189,7 +198,11 @@
 	                                </ul>
                                 </aside> 
 
+
+
                             </div>
+
+                            </aside>
                         
 
                     </section>
@@ -222,7 +235,8 @@
 }
 .Langues
 {
-    background-color: white; 
+    background-color: #CD5C5C; 
+    color: white;
 }
 
 .Centres
@@ -279,22 +293,32 @@ aside
     
 }
 
-.images_petit 
+
+.images_petit  /*pour la photo*/
 {
-width:200px;
-height:200px;
-padding-bottom: 25px;
+    width:180px;
+    height:150px;
+    padding-bottom: 25px;
 
 }
 
 .side3
 {
+        flex:1;
         background-color: #7591A4;
 
         color: white; 
 
         padding: 0px; 
+        position: relative;
 
+
+}
+
+.side_interieur
+{
+    background-color: white;
+    color: black;
 
 }
 
@@ -317,24 +341,24 @@ div img
 .decoupe
 {
     display: flex;
-    margin-top: 5%;
+    margin-top: 0%; /* marger ou pousser le bloc */
     /* border-radius: 55px; */
     /*border: 3px black solid; /* bordure */
     background-color: white; 
-    margin-right: 20px; 
+    margin-right: 20px; /* marge à droite */
     margin-bottom: 20px; /* marge du bas */
 
 }
 
 .decoupe ul
 {
-    list-style-image: url('ico_liensexterne.png');
-    padding-left: 2px;
+    
+    padding-left: 5px; /*pousser le texte de la gauche vers la droite */
 }
 .decoupe div
 {
-    padding: 5%;
-    margin-top: 15px;
+    padding: 2%;
+    margin-top: none; /* pousser le texte du haut vers le bas */
 }
 
 body
@@ -350,7 +374,7 @@ body
 h3
 {
     color: blue;
-    clear: both;
+   /* clear: both; */
 }
 
 h1
@@ -383,10 +407,10 @@ h1
 .lien-bloc
 {
 
-    padding-bottom: 30px;
-    margin-top: 100px;
+    padding-bottom: 0px; /* élargir vers le bas*/
+    /*margin-top: 0px; */
     font-size: 20px;
-    padding-top: 25px;
+    padding-top: 5px;
 }
 
 a /* sert à enlever le soulignement du lien */
